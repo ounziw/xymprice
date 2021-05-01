@@ -23,5 +23,7 @@ WordPress の編集画面でブロックを選択し、編集する
 
 * 文字サイズ
 
+![編集画面の動画キャプチャ](img/xymprice.gif)
+
 ## ライセンス
 GPL ver.2.0 or later
