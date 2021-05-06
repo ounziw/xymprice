@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin name: XYM Price block
- * Version: 0.9
- * Description: displays WYM price.
+ * Version: 0.9.1
+ * Description: displays XYM price.
  * Author: ounziw
  * Author URI: https://php4wordpress.calculator.jp/
  * License: GPL2 or later
@@ -23,6 +23,7 @@ function xymprice_register_block() {
     );
 
     register_block_type( 'xymprice/xymprice', array(
+	    'api_version' => 2,
         'editor_script' => 'xymprice',
     ) );
 }
@@ -42,6 +43,7 @@ function xymprice_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'xymprice_enqueue_scripts' );
 
 function xymprice_load_textdomain() {
-    load_plugin_textdomain( 'xymprice', false, basename( __DIR__ ) . '/languages' );
+	load_plugin_textdomain( 'xymprice', false, plugin_dir_path(__FILE__) . '/languages' );
+	wp_set_script_translations( 'xymprice', 'xymprice', plugin_dir_path(__FILE__) . '/languages' );
 }
 add_action( 'init', 'xymprice_load_textdomain' );

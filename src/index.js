@@ -6,10 +6,11 @@ import { FontSizePicker } from '@wordpress/components';
 import { InspectorControls } from '@wordpress/block-editor';
 import { PanelBody } from '@wordpress/components';
 import { useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
 registerBlockType('xymprice/xymprice', {
     apiVersion: 2,
-    title: 'XYM Price',
+    title: __( 'XYM Price', 'xymprice' ),
     icon: 'chart-line',
     category: 'common',
     attributes: {
@@ -52,7 +53,7 @@ registerBlockType('xymprice/xymprice', {
         return (
             <>
                 <InspectorControls>
-                    <PanelBody title="価格の文字サイズ" initialOpen={ false } >
+                    <PanelBody title={ __( 'Price Font Size', 'xymprice' ) } initialOpen={ false } >
                         <FontSizePicker
                             value={ fontSize }
                             onChange={ ( size ) => {
@@ -63,7 +64,7 @@ registerBlockType('xymprice/xymprice', {
                             withSlider
                         />
                     </PanelBody>
-                    <PanelBody title="全体の文字サイズ" initialOpen={ false } >
+                    <PanelBody title={ __( 'Message Font Size', 'xymprice' ) } initialOpen={ false } >
                         <FontSizePicker
                             value={ fontSizeb }
                             onChange={ ( size ) => {
@@ -78,21 +79,21 @@ registerBlockType('xymprice/xymprice', {
                 <div { ...blockProps}>
                     <TextControl
                         value={ contentBefore }
-                        label={ "価格の前" }
+                        label={ __( 'Message before Price', 'xymprice' ) }
                         onChange={(newTextBefore)=>setAttributes({contentBefore: newTextBefore})}
                     />
                     <RadioControl
-                        label="表示する価格"
+                        label={ __( 'Price Unit', 'xymprice' ) }
                         help=""
                         selected={ currency }
                         options={ [
-                            { label: 'ドル(USD)', value: 'usd' },
-                            { label: '円(JPY)', value: 'jpy' },
+                            { label: __( 'USD', 'xymprice' ), value: 'usd' },
+                            { label: __( 'JPY', 'xymprice' ), value: 'jpy' },
                         ] }
                         onChange={(newValue)=>{setAttributes({currency: newValue})}}
                     />
                     <RangeControl
-                        label="小数点表示桁数"
+                        label={ __( 'Number of decimal places', 'xymprice' ) }
                         value={ floatnum }
                         onChange={ ( newNumber ) => setAttributes( { floatnum: newNumber } ) }
                         min={ 0 }
@@ -100,7 +101,7 @@ registerBlockType('xymprice/xymprice', {
                     />
                     <TextControl
                         value={ contentAfter }
-                        label={ "価格の後" }
+                        label={ __( 'Message after Price', 'xymprice' ) }
                         onChange={(newTextAfter)=>setAttributes({contentAfter: newTextAfter})}
                     />
                 </div>
