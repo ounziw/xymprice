@@ -28,3 +28,5 @@ On the side bar:
 
 ## License
 GPL ver.2.0 or later
+
+Japanese description is available [here.](https://nemlog.nem.social/blog/60552)
