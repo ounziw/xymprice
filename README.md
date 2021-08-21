@@ -1,29 +1,32 @@
 ## XYM Price
 WordPress plugin: XYM price display via coingecko api
 
-## プラグインの概要
-coingecko api を利用して、仮想通貨 xym の価格を表示する WordPress プラグイン。
+## Overview
+A WordPress plugin which displays a XYM price, using coingecko api.
+You can choose either XYMUSD or XYMJPY.
 
-## API URLの設定
-ver 0.9 では、coingecko のみ対応。変更不可。(js/xymprice.jsにべた書き)
+## API URL
+Ver. 0.9 supports only coingecko.
 
-## ブロックエディタ
-WordPress の編集画面でブロックを選択し、編集する
+## How to Use
+On your WordPress/s edit screen, put a XYM price block.
 
-![編集画面](img/xymprice.png)
+![edit screen](img/xymprice.png)
 
-ブロックメインで設定できるもの
+On the main edit area:
 
-* 価格の前のテキスト
-* 表示する価格 - 対USDか、対JPYか
-* 価格は小数点何位まで表示するか
-* 価格の後のテキスト
+* Message before Price
+* Price Unit - USD / JPY
+* 'Number of decimal places
+* Message after Price
 
-サイドバーで設定できるもの
+On the side bar:
 
-* 文字サイズ
+* font size
 
-![編集画面の動画キャプチャ](img/xymprice.gif)
+![video for editing xymprice](img/xymprice.gif)
 
-## ライセンス
+## License
 GPL ver.2.0 or later
+
+Japanese description is available [here.](https://nemlog.nem.social/blog/60552)
