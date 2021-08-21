@@ -5,7 +5,7 @@ WordPress plugin: XYM price display via coingecko api
 coingecko api を利用して、仮想通貨 xym の価格を表示する WordPress プラグイン。
 
 ## API URLの設定
-ver 0.9 では、coingecko のみ対応。変更不可。(js/xymprice.jsにべた書き)
+ver 1.0 では、coingecko のみ対応。変更不可。(js/xymprice.jsにべた書き)
 
 ## ブロックエディタ
 WordPress の編集画面でブロックを選択し、編集する

@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin name: XYM Price block
- * Version: 0.9.1
+ * Version: 1.0
  * Description: displays XYM price.
  * Author: ounziw
  * Author URI: https://php4wordpress.calculator.jp/
