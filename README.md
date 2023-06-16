@@ -2,7 +2,7 @@
 WordPress plugin: XYM price display via coingecko api
 
 ## Overview
-A WordPress plugin which displays a XYM price, using coingecko api.
+A WordPress plugin which displays a XYM(Symbol blockchain coin) price, using coingecko api.
 You can choose either XYMUSD or XYMJPY.
 
 ## API URL
