@@ -33,6 +33,7 @@ Japanese description
 
 
 ##使い方
+
 WordPress編集画面で XYM Priceブロックを設置します。
 
 ブロック編集画面で、以下を入力します。
