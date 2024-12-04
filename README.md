@@ -32,7 +32,7 @@ GPL ver.2.0 or later
 Japanese description
 
 
-##使い方
+## 使い方
 
 WordPress編集画面で XYM Priceブロックを設置します。
 
